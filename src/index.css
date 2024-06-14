@@ -1,0 +1,182 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position above the link */
+  left: 50%;
+  margin-left: -60px; /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip-container:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.formDiv{
+  background-color: rgb(241, 246, 243);
+  height: 100vw;
+  
+}
+.fieldDiv{
+  margin-top: 80px;
+  border: 1px solid rgb(244, 240, 240);
+  background-color: rgb(120, 89, 232);
+  border-radius: 7px;
+  padding: 40px;
+}
+.fieldDiv h2{
+margin-left: 190px;
+padding-bottom: 10px;
+color: white;
+font-size: 28px;
+font-weight: 500;
+}
+.fieldDiv h4{
+  font-size: 14px;
+  padding: 10px;
+  margin-left: 85px;
+  font-weight: 500;
+}
+.userIcon{
+  justify-items: center;
+  margin-left: 200px;
+  border-radius: 20%;
+}
+
+.loginBtn{
+  margin-left: 170px;
+  padding:6px 8px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background-color:rgb(249, 47, 47);
+  color: rgb(239, 237, 242);
+  font-size: 14px;
+  text-decoration: none;
+}
+.loginBtn:hover{
+  background-color: rgb(152, 50, 50);
+}
+
+.signup{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+.inputField{
+  display: flex;
+  flex-direction: column;
+ margin-top: 1rem;
+
+}
+.inputField label{
+  color: rgb(247, 242, 242);
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+ 
+}
+
+.inputField input{
+  height: 30px;
+  width: 400px;
+  border-radius: 6px;
+}
+.inputFieldLogin{
+  display: flex;
+  flex-direction: column;
+}
+.inputFieldLogin input{
+  height: 30px;
+  width: 450px;
+  border-radius: 6px;
+}
+.inputFieldLogin label{
+  color: rgb(247, 242, 242);
+  font-family: Arial, Helvetica, sans-serif ;
+  font-size: 15px;
+  font-weight: 500;
+  padding-bottom: 8px;
+}
+.submit{
+  margin-top: 1rem;
+  width:400px;
+  padding: 10px;
+  color:rgb(248, 243, 243);
+  cursor: pointer;
+  background-color:rgb(131, 10, 131);
+  border: none;
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: 15px;
+  font-weight: 500;
+  transition-duration: 0.5sec;
+}
+.submitLogin{
+  margin-top: 1rem;
+  width:450px;
+  height: 40px;
+  padding: px;
+  color:rgb(248, 243, 243);
+  cursor: pointer;
+  background-color:rgb(131, 10, 131);
+  border: none;
+  border-radius: 5px;
+  font-family:Arial, Helvetica, sans-serif ;
+  font-size: 15px;
+  font-weight: 500;
+  transition-duration: 0.5sec;
+}
+.submitLogin:hover{
+  background-color: rgb(74, 13, 74);
+}
+
+.errorSpan{
+  color: rgb(218, 61, 61);
+  font-size: 12px;
+}
+.submit:hover{
+  background-color: rgb(74, 13, 74);
+}
+.formDivlog{
+  background-color: rgb(240, 226, 226);
+  height: 575px;
+  
+}
+.checkBox{
+display: flex;
+padding-top: 10px;
+gap: 5px;
+color: rgb(109, 20, 20);
+font-size: 15px;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.forget{
+  padding-top: 10px;
+  font-size: 15px;
+  margin-left: 110px;
+  color: rgb(242, 237, 237);
+  text-decoration: underline;
+  cursor: pointer;
+}
