@@ -21,6 +21,9 @@ import { usersLoader } from './AdminPages/AllUsers.jsx'
 //import AddProduct from './AdminPages/AddProduct.jsx'
 import AddCategory from './AdminPages/AddCategory.jsx'
 import  {categoryLoader} from './components/UpdateProduct.jsx'
+import ViewOrders from './AdminPages/ViewOrders.jsx'
+import VerifyProducts from './AdminPages/VerifyProducts.jsx'
+import PlaceOrder from './AdminPages/PlaceOrder.jsx'
 
 
 const router = createBrowserRouter([
@@ -67,11 +70,24 @@ const router = createBrowserRouter([
             element:<AddCategory/>,
             
           },
-          /*{
-            path:'add-product',
-            element:<AddProduct/>,
-            loader:categoryLoader,
-          },*/
+          {
+            path:'view-orders',
+            element:<ViewOrders/>,
+            
+          },
+          {
+            path:'verify-products',
+            element:<VerifyProducts/>,
+            
+          },
+          {
+            path:'place-order',
+            element:<PlaceOrder/>,
+            
+          },
+         
+         
+         
           
          
          

@@ -7,6 +7,10 @@ import { GiClothes } from "react-icons/gi";
 
 import { MdCategory } from "react-icons/md";
 import { RiApps2AddFill } from "react-icons/ri";
+import { RiListUnordered } from "react-icons/ri";
+import { GrDocumentVerified } from "react-icons/gr";
+import { GrDeliver } from "react-icons/gr";
+
 
 
 const AdminPanel = () => {
@@ -50,11 +54,27 @@ const AdminPanel = () => {
                   <div className='flex items-center p-2 hover:bg-blue-200'>
                   <MdCategory className='text-2xl'/>
                   <Link to={"add-category"} className='px-2 py-1 hover:bg-blue-200'>Add Category</Link>
-                   
+            
+                  </div>
+
+                  <div  className='flex items-center p-2 hover:bg-blue-200'>
+                  <RiListUnordered className='text-2xl'/>
+                  <Link to={"view-orders"} className='px-2 py-1 hover:bg-blue-200'>View Orders</Link>
                   </div>
                   
+
+                  <div  className='flex items-center p-2 hover:bg-blue-200'>
+                  <GrDocumentVerified className='text-2xl'/>
+                  <Link to={'verify-products'} className='px-2 py-1 hover:bg-blue-200'>Verify Products</Link>
+                  </div>
+
+                  <div  className='flex items-center p-2 hover:bg-blue-200'>
+                  <GrDeliver className='text-2xl'/>
+                  <Link to={'place-order'} className='px-2 py-1 hover:bg-blue-200'>Place Order</Link>
+                  </div>
             </nav>
            </div>
+
         
         </aside>
         <main className='w-full h-full p-4'>
