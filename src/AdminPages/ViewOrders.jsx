@@ -47,7 +47,7 @@ const ViewOrders = () => {
                     <tr className="bg-gray-100 border-b border-gray-200">
                         <th className="py-2 px-4 text-left">Order ID</th>
                         <th className="py-2 px-4 text-left">Customer</th>
-                        <th className="py-2 px-4 text-left">Customer Name</th>
+                       
                         <th className="py-2 px-4 text-left">Status</th>
                         <th className="py-2 px-4 text-left">Products</th>
                         <th className="py-2 px-4 text-left">Total Price</th>
