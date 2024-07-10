@@ -60,7 +60,7 @@ const ViewOrders = () => {
                             <td className="py-2 px-4">{order._id}</td>
                            
                             <td className="py-2 px-4">{order.user_id}</td>
-                            <td className="py-2 px-4">{users[order.user_id]?.name || 'Unknown'}</td>
+                           
                             <td className="py-2 px-4">{order.status}</td>
                             <td className="py-2 px-4">
                                 <ul className="list-disc list-inside">
